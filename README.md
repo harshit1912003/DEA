@@ -52,8 +52,7 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 This project is licensed under the MIT License.
 
 ## Connect with Us  
-**This repository is actively maintained, and we welcome suggestions and improvements.
-**
+**This repository is actively maintained, and we welcome suggestions and improvements.**
 
 Feel free to contact Ananya and/or Harshit via following links:
 

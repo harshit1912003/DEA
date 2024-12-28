@@ -1,6 +1,15 @@
-# DEA and FDH Analysis Project
+# Data Envelopment Analysis Project
+This project, undertaken as part of our Master’s Thesis and Winter Internship for 2024 under Professor Aparna Mehra (HOD, Mathematics IITD), explores advanced methodologies in Data Envelopment Analysis (DEA).
 
-This project is focused on implementing and analyzing various Data Envelopment Analysis (DEA) models, including CCR, BCC, and FDH models. The project includes time complexity analysis, efficiency distribution, and frontier comparison using Python and Jupyter Notebooks.
+Most available DEA software is either paid, proprietary, or lacks a wide spectrum of the latest models.
+
+In our project, we investigated foundational DEA models under CRS and VRS assumptions, analyzed input- and output-oriented frameworks, and implemented sophisticated efficiency measures such as SBM and Additive models. Our work extends to Free Disposal Hull (FDH) models, complemented by the implementation of the Li-Test to statistically validate differences in efficiency and rankings between FDH and DEA models. The Li-Test, developed from scratch in Python for discrete data, enhances the robustness of our findings.
+
+To facilitate visual analysis, we have developed various plotting functions, ensuring computational efficiency and minimal redundancy in runtime and memory usage. During the winter internship, we extended our models to handle non-homogeneous outputs, verifying results against Pooja Bansal’s implementation.
+
+Future work includes integrating Envelopment Analysis Tree (EAT) methodology and **developing a user-friendly interface** to enhance accessibility. This project is entirely free and open-source, available for anyone to use and build upon.
+
+
 
 ## Table of Contents
 
@@ -20,46 +29,36 @@ To run this project, you need to have Python 3 installed. You can install the re
 pip install -r requirements.txt
 ```
 
-## Usage
-
-1. **Importing Modules**: The project uses several custom modules and utility functions. Ensure that your Python path is set correctly to import these modules.
-
-2. **Running Notebooks**: Open the Jupyter Notebooks in the project directory to explore different analyses:
-   - `Tutorials.ipynb`: Provides examples of DEA models and their usage.
-   - `DistributionAnalysis.ipynb`: Analyzes the efficiency distribution of different models.
-   - `TimeComplexityAnalysis.ipynb`: Evaluates the time complexity of DEA models with varying inputs.
-   - `FrontierComparision.ipynb`: Compares the efficiency frontiers of different models.
-
-3. **Executing Code**: Each notebook contains code cells that can be executed to perform the analyses. Follow the instructions within each notebook to understand the workflow.
-
 ## Project Structure
 
-- **models**: Contains the implementation of DEA and FDH models.
-- **utils**: Utility functions for data manipulation, plotting, and efficiency calculations.
-- **notebooks**: Jupyter Notebooks for tutorials, analysis, and comparisons.
+- **models**: Contains the implementation of the models.
+- **utils**: Utility functions for data initialization and processing, plotting, and the Li-Test.
 
-## Key Features
+## Experiments (stored as jupyter notebooks)
 
-- **DEA Models**: Implementation of CCR, BCC, and FDH models.
-- **Efficiency Analysis**: Tools to calculate and compare efficiency scores.
-- **Time Complexity**: Analysis of computational efficiency with varying data sizes.
-- **Visualization**: Plotting capabilities to visualize efficiency frontiers and distributions.
+- **Tutorial**: A tutorial on how to use this repository.
 
-## Dependencies
 
-- Python 3.12.7
-- NumPy
-- Matplotlib
-- Seaborn
-- Gurobi (for optimization tasks)
-- SciPy
-
-Ensure all dependencies are installed using the `requirements.txt` file.
+- **DistributionAnalysis**: Analysis of the distribution of efficiency scores between FDH and CCR models with VRS and CRS assumptions.
+- **FrontierComparision**: Analysis of the frontier between FDH and CCR models.
+-**TimeComplexityAnalysis**: Comparison of computational efficiency between the models.
+<!-- - **PoojaBansal**:  -->
+- **largeN_DEA**: Comparison of efficiency scores between CCR, BCC, and SBM models.
 
 ## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure that your code is well-documented and follows the project's coding standards.
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
 ## License
+This project is licensed under the MIT License.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+## Connect with Us  
+<section style="border: 2px solid #62e85a; background-color: #62e85a; padding: 15px; border-radius: 8px; font-weight: bold; color: #ffffff; text-align: center;">
+  This repository is actively maintained, and we welcome suggestions and improvements.
+</section>
+
+
+Feel free to contact Ananya and/or Harshit via following links:
+
+- **LinkedIn**:  
+- **Twitter/X**:  
+- **Email**:  

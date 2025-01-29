@@ -2,8 +2,8 @@ from gurobipy import Model, GRB, quicksum, LinExpr
 import pandas as pd
 import numpy as np
 from utils.is_efficient import is_efficient
-from modelsDEA import DEA
-from utils import groupDMUs
+from .modelsDEA import DEA
+from utils.groupDMUs import groupDMUs
 
 class Non_Homo:
     def __init__(self, input_data, output_data):

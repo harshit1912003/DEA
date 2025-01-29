@@ -1,0 +1,47 @@
+// EAT
+digraph {
+	0 [label="Id = 0
+R = 46.0
+samples = 11
+x2 < 8| x2 >= 8
+y = [10]
+" shape=box]
+	1 [label="Id = 1
+R = 17.09
+samples = 10
+x1 < 5| x1 >= 5
+y = [7]
+" shape=box]
+	2 [label="Id = 2
+R = 0.0
+samples = 1
+y = [10]
+" shape=ellipse]
+	3 [label="Id = 3
+R = 4.91
+samples = 6
+x2 < 6| x2 >= 6
+y = [5]
+" shape=box]
+	4 [label="Id = 4
+R = 4.18
+samples = 4
+y = [7]
+" shape=ellipse]
+	5 [label="Id = 5
+R = 0.91
+samples = 5
+y = [3]
+" shape=ellipse]
+	6 [label="Id = 6
+R = 0.0
+samples = 1
+y = [5]
+" shape=ellipse]
+	0 -> 1
+	0 -> 2
+	1 -> 3
+	1 -> 4
+	3 -> 5
+	3 -> 6
+}

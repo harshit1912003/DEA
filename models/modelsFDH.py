@@ -285,3 +285,27 @@ class FDH:
         results = is_efficient(results, 'rdm_fdh')
         self.results['rdm_fdh'] = results
         return results
+
+
+# CANT IT ALSO JUST BE PHI*OUTPUT ???
+
+    def predict(self, x, model_name):
+        if model_name not in self.results:
+            raise ValueError(f"Model {model_name} has not been computed yet.")
+        x = np.array(x)
+        model_results = self.results[model_name]
+
+        # Find all efficient DMUs with input values strictly less than x
+        valid_dmus = []
+        for i in range(self.n):
+            if model_results.loc[i, 'is_efficient'] and np.all(self.input_data[i] <= x):
+                valid_dmus.append(i)
+
+        if not valid_dmus:
+            return 0
+            # raise ValueError("No efficient DMUs found with input values strictly less than the given input.")
+
+        # Get the corresponding outputs and take the maximum
+        max_output = np.max(self.output_data[valid_dmus], axis=0)
+
+        return max_output.item()

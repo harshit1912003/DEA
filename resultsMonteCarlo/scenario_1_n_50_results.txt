@@ -1,0 +1,4 @@
+Scenario 1, Sample size 50:
+  FDH MSE: 0.0732, EAT MSE: 0.1388
+  FDH Bias: 0.1689, EAT Bias: 0.2739
+  FDH AbsBias: 0.1689, EAT AbsBias: 0.2739
